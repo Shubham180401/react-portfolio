@@ -1,0 +1,166 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+.headfont{
+  color :#7c1034;
+    font-family: 'Dancing Script', cursive;
+}
+
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+.iconposition{
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  display: flex;
+  flex-direction: column;
+  margin: 2%;
+}
+.icons{
+  margin-bottom: 20%;
+  background: blue;
+}
+
+.profile {
+  position: relative;
+  height: 40vh;
+  /* width: 100%; */
+  min-height: 250px;
+  max-height: 350px;
+  z-index: 1;
+  background: url(../imgs/banner.jpg) no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.profile-avatar {
+  position: absolute;
+  align-items: baseline;
+  display: flex;
+  z-index: 1;
+  bottom: 0;
+  left: 24px;
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-name {
+  margin-left: 24px;
+  margin-bottom: 24px;
+  font-size: 40px;
+  color: #fff;
+  font-weight: 600;
+  font-family: "DM Sans", sans-serif;
+}
+
+@media screen and (max-width: 700px) {
+  .profile-avatar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .profile-img {
+    height: 150px;
+    aspect-ratio: 1/1;
+  }
+  .profile-name {
+    margin: 0%;
+    position: relative;
+    /* top: 25px; */
+  }
+}
+
+
+
+
+/* ///////////////////////////////////////////////////// */
+
+.homecontent{
+    display: flex;
+    justify-content: space-between;
+}
+
+.homeleft{
+    width: 50%;
+    /* background: plum; */
+    /* height: 400px; */
+}
+.homeright{
+    width: 50%;
+    /* background: peru; */
+    /* height: 400px; */
+}
+
+.homewidget {
+  background: #252f9c;
+  border-radius: 10px;
+  padding: 2%;
+  margin: 2%;
+  font-size: 1.4rem;
+}
+
+.school{
+  margin: 2%;
+  font-size: 1.4rem;
+  font-weight: bold;
+  font-variant: uppercase;
+}
+.highlight {
+  font-size: 1.4rem;
+  color: #ffd463;
+  padding: 1%;
+}
+
+@media screen and (max-width: 700px) {
+  .homecontent{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .homeleft,.homeright{
+    width: 100%;
+  }
+}
+
+/* button styling and animation ---------------------------------------------- */
+
+.resumeButton{
+  width: 50%;
+  overflow-x: hidden;
+  display: flex;
+
+  color: #faab99;
+  background: #7c1034;
+  border-radius: 20px;
+  padding: 2%;
+  margin: 2%;
+  font-size: 1.4rem;
+}
+.resumecontent{
+  width: 100%;
+}
+.downloadicon {
+  display: inline;
+  position: relative;
+  right: -20%;
+  transition: 0.4s ease-in-out;
+}
+
+.resumeButton:hover > .downloadicon{
+  position: relative;
+  right: 10%;
+  transition: 0.4s ease-in-out;
+}

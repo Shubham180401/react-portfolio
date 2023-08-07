@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,100&display=swap');
+
+
+
+*{
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.crd-img-photo{
+  height: 14rem;
+  /* width: 21rem; */
+  /* aspect-ratio: 4/3; */
+  object-fit: fill;
+  max-width: 21rem;
+  width: 70vw;
+}
+
+/* MAIN */
+/* ====================================================== */
+.crd {
+  object-fit: fill;
+  margin: 1rem;
+  position: relative;
+  width: 34rem;
+  height: 50rem;
+  overflow: hidden;
+
+  font-family: 'Raleway', sans-serif;
+  font-weight: bolder;
+}
+
+.crd-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-repeat: no-repeat;
+  background-size: fill;
+} 
+
+.crd-info {
+  /* color: #7a571c; */
+  position: absolute;
+  bottom: 40px;
+  left: 30px;
+}
+
+
+.crd-heading {
+  letter-spacing: 5px;
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: 900;
+  border-bottom: 2px solid #c7be5f;
+  color: #c7be5f;
+}
+
+.crd-text {
+  color: #c7be5f;
+  /* opacity: 0.6; */
+  padding-left: 1rem;
+}
+
+/* EFFECTS */
+/* ====================================================== */
+
+.crd--effect {
+  width: 100%;
+  max-width: 24rem;
+  max-height: 14rem;
+}
+
+.crd--effect .crd-info {
+  top: 50%;
+  left: 50%;
+  bottom: unset;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.crd--effect .crd-img {
+  transition: 0.8s;
+}
+
+.crd--effect:hover .crd-img {
+  filter: saturate(0);
+  transform: scale(1);
+}
+
+.crd--effect .crd-heading {
+  transform: scale(2);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.crd--effect .crd-text {
+  padding-left: 0;
+  transform: scale(1.2);
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.crd--effect:hover .crd-heading {
+  opacity: 0.8;
+  transform: scale(1);
+}
+
+.crd--effect:hover .crd-text {
+  opacity: 1;
+  transform: scale(1);
+}
+
+
+
+  
+  
+  
+  
+  
+  .centerheading{
+    font-size: 1.6rem;
+    border-bottom: 2px solid grey;
+    /* position: fixed; */
+  }  
+  
+.certificatepanel {
+  /* background: rebeccapurple; */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+}
+
+.Certificatecard {
+  /* background: red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  /* width: 80vw; */
+  max-width: 21rem;
+  width: 70vw;
+}
+
+.certificateabout{
+  max-width: 21rem;
+  width: 70vw;
+  font-size: medium;
+  text-align: center;
+  border-top: 2px solid #7c1034;
+  padding-top: 2%;
+}
